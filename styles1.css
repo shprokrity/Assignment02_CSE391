@@ -1,0 +1,130 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  height: 100%;
+  background: url('FortuneTeller2.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* full dark shadow over bg */
+  min-height: 100vh;
+  width: 100%;
+  color: rgb(255, 221, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px 20px 40px; /* less top padding, more space at bottom */
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3.6em;         /* Bigger title */
+  margin-top: 5px;       /* Pushes it higher */
+  margin-bottom: 80px;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+}
+
+.dob-section input {
+  padding: 10px;
+  font-size: 1.2em;
+  background: #dae788;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1em;
+  background: #4487c3;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: #f4cbb2;
+  transform: scale(1.05);
+}
+
+#zodiac-display {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #fffacd;
+}
+
+#fortune-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#fortune-box {
+  background: rgba(70, 220, 243, 0.9);
+  color: #333;
+  border: 2px solid #f7d9c4;
+  border-radius: 12px;
+  padding: 20px;
+  width: 60%;
+  font-size: 1.2em;
+  margin: 10px;
+  transition: all 0.5s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#color-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.color-btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  margin: 10px auto;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.color-btn:hover {
+  transform: scale(1.05);
+}
+
+#btn1 { background: #561656d4; } /* Purple */
+#btn2 { background: #4107a5; } /* Blue */
+#btn3 { background: #e2f016; } /* Magenta */
+#btn4 { background: #dc2413b7; } /* Olive */
+
+footer {
+  margin-top: 40px;
+  color: #dddddd;
+  font-size: 1em;
+}
+
+#get-fortune-btn {
+  background: #ff7f50;  /* coral color, you can change this */
+}
+
+#get-fortune-btn:hover {
+  background: #ffa07a;
+}
