@@ -11,7 +11,7 @@ const fortunes = [
     "An old wish will come closer to fulfillment."
 ];
 
-// Zodiac calculation
+// Zodiac sign hishab
 document.getElementById('get-zodiac-btn').addEventListener('click', () => {
     const dob = document.getElementById('dob').value;
     if (!dob) {
@@ -45,7 +45,7 @@ function getZodiacSign(date) {
     if((month == 12 && day >= 22) || (month == 1 && day <= 19)) return "Capricorn";
 }
 
-// Reveal fortune
+// Reveal button er kaaj
 document.getElementById('get-fortune-btn').addEventListener('click', () => {
     const randomIndex = Math.floor(Math.random() * fortunes.length);
     const fortuneBox = document.getElementById('fortune-box');
@@ -61,7 +61,7 @@ document.getElementById('get-fortune-btn').addEventListener('click', () => {
     }, 300);
 });
 
-// Color buttons with consistent styles
+// Color button gulor details
 document.getElementById('btn1').addEventListener('click', () => {
     applyStyles('#561656d4', '#808080', '#FFFFFF', '20px', 'Times New Roman');
 });
